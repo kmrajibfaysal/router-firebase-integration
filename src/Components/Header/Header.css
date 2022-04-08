@@ -1,0 +1,13 @@
+.header nav {
+  padding: 0.5em 0.5em;
+}
+.header nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: Black;
+  padding: 5px;
+}
+
+.header nav a:hover {
+  color: rgb(128, 1, 153);
+}
