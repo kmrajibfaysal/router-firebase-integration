@@ -9,6 +9,7 @@ import Orders from './Components/Orders/Orders';
 import Products from './Components/Products/Products';
 import Register from './Components/Register/Register';
 import RequireAuth from './Components/RequireAuth/RequireAuth';
+import Secrets from './Components/Secrets/Secrets';
 
 function App() {
   return (
@@ -37,6 +38,14 @@ function App() {
 
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/contact" element={<Contact></Contact>}></Route>
+        <Route
+          path="/secrets"
+          element={
+            <RequireAuth>
+              <Secrets></Secrets>
+            </RequireAuth>
+          }
+        ></Route>
         <Route path="/login" element={<Login />}></Route>
       </Routes>
     </div>
